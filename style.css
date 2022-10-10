@@ -6,6 +6,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  /* For the links menu */
+  overflow-x: hidden;
 }
 
 :root {
@@ -72,7 +74,23 @@ nav svg {
 }
 
 .links {
-  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: black;
+  transform: translate(100%);
+}
+.links a {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 .selling-point {
@@ -148,4 +166,25 @@ nav svg {
 .about img {
   margin-top: 2rem;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 5%;
+  }
+  .videos {
+    display: flex;
+    gap: 2rem;
+  }
+  .about {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+  }
+  .about img {
+    width: 50%;
+  }
+  .about p {
+    text-align: start;
+  }
 }
