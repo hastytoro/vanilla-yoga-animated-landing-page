@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 :root {
   --main-color: #f8b281;
   --secondary-color: #1b1b1b;
@@ -109,6 +113,9 @@ nav svg {
   font-family: "orgonite", sans-serif;
 }
 
+.videos {
+  margin-top: 1rem;
+}
 .videos div {
   position: relative;
 }
@@ -125,4 +132,20 @@ nav svg {
   width: 100%;
   border-radius: 1rem;
   margin-top: 1rem;
+}
+
+/* PAGE 3 */
+.about {
+  color: var(--secondary-color);
+}
+.about h2 {
+  font-family: "orgonite", sans-serif;
+}
+.about p {
+  line-height: 150%;
+  font-size: 1.2rem;
+}
+.about img {
+  margin-top: 2rem;
+  width: 100%;
 }
